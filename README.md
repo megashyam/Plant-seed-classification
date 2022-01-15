@@ -29,4 +29,15 @@ For creating mask, which will remove background, we need to convert RGB image to
 After creating HSV image, we'll create mask based on empirically selected range of green color, convert it to boolean mask and apply it to the origin image.
 
 
+![alt text](https://github.com/megashyam/Plant-seed-classification/blob/main/mask.png)
+
+## _Create model_
+I created a custom sequential model with 4 convolutional layers and 2 fully-connected layers in the end. First convolutional layer has 128 filters, next two 384 filters and the last has 256 filters. After each pair of convolution layers model have max pooling layer. Also, to reduce overfitting after each pair of convolution layers we use dropout layer (50% between fully connected layers).The optimizer used was adam(with learning rate=1e-5) and categorical cross entropy as the loss function.
+
+In the end i used 2 fully-connected layers for classifying. In the last layer the neural net outputs distribution of probability for each of 12 classes.
+
+
+![alt text]( )
+
+
 
