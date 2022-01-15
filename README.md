@@ -37,7 +37,9 @@ I created a custom sequential model with 4 convolutional layers and 2 fully-conn
 In the end i used 2 fully-connected layers for classifying. In the last layer the neural net outputs distribution of probability for each of 12 classes.
 
 
-![alt text]( )
+![alt text](https://github.com/megashyam/Plant-seed-classification/blob/main/model.PNG)
+
+
 
 
 
