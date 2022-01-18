@@ -39,6 +39,13 @@ In the end i used 2 fully-connected layers for classifying. In the last layer th
 
 ![alt text](https://github.com/megashyam/Plant-seed-classification/blob/main/model.PNG)
 
+## _Results_
+
+The model was trained for 50 epochs on Nvidia GTX 1050(4gb) and achived the following:
+
+
+
+
 
 
 
