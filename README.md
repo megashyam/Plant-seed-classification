@@ -28,7 +28,10 @@ For creating mask, which will remove background, we need to convert RGB image to
 
 After creating HSV image, we'll create mask based on empirically selected range of green color, convert it to boolean mask and apply it to the origin image.
 
+### _without mask_
+![alt_text](https://github.com/megashyam/Plant-seed-classification/blob/main/nomask.png)
 
+### _with mask_
 ![alt text](https://github.com/megashyam/Plant-seed-classification/blob/main/mask.png)
 
 ## _Create model_
