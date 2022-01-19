@@ -32,7 +32,7 @@ After creating HSV image, we'll create mask based on empirically selected range 
 ![alt text](https://github.com/megashyam/Plant-seed-classification/blob/main/mask.png)
 
 ## _Create model_
-I created a custom sequential model with 4 convolutional layers and 2 fully-connected layers in the end. First convolutional layer has 128 filters, next two 384 filters and the last has 256 filters. After each pair of convolution layers model have max pooling layer. Also, to reduce overfitting after each pair of convolution layers we use dropout layer (50% between fully connected layers).The optimizer used was adam(with learning rate=1e-5) and categorical cross entropy as the loss function.
+I created a custom sequential model with 4 convolutional layers and 2 fully-connected layers in the end. First convolutional layer has 128 filters, next two 384 filters and the last has 256 filters. After each pair of convolution layers model have max pooling layer with same padding and stride of 3 the activation function used is relu. Also, to avoid overfitting after each pair of convolution layers I used 5 dropout layers (50%).The optimizer used was adam(with learning rate=1e-5) and categorical cross entropy as the loss function.
 
 In the end i used 2 fully-connected layers for classifying. In the last layer the neural net outputs distribution of probability for each of 12 classes.
 
@@ -41,7 +41,14 @@ In the end i used 2 fully-connected layers for classifying. In the last layer th
 
 ## _Results_
 
-The model was trained for 50 epochs on Nvidia GTX 1050(4gb) and achived the following:
+The model was trained for 50 epochs on Nvidia GTX 1050(4gb) and achived the following resluts:
+
+### Accuracy chart
+![alt text](https://github.com/megashyam/Plant-seed-classification/blob/main/accuracy.png)
+
+### Loss chart
+![alt text](https://github.com/megashyam/Plant-seed-classification/blob/main/loss.png)
+
 
 
 
